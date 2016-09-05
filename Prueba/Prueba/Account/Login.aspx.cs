@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Owin;
 using Prueba.Models;
+using Datos;
 
 namespace Prueba.Account
 {
