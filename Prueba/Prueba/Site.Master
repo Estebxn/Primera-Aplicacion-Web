@@ -78,7 +78,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Tecnico En Programacion De Software.</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Técnico En Programación De Software.</p>
             </footer>
         </div>
     </form>
