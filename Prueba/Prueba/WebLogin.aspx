@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://wwwtemas7.blogspot.com.co/">
 <head runat="server">
     <title></title>
 </head>
