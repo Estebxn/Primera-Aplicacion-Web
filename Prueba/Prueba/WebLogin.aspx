@@ -9,27 +9,18 @@
 <body>
     <form id="Login" runat="server">
     <div>
-<html>
-<head><h2 align="left">Inicia Sesion Aquí</h2>
-<section class="loginform cf">
-<form name="login" action="index_submit" method="get" accept-charset="UTF-8">
-  <ul>
-<table>
-<tr>
-<th><label for="Usuario">Usuario</label></th>
-   <th><input type="User" name="Usuario" placeholder="ejemplo@email.com" required></th>
-<tr> 
-<th><label for="Contraseña">Contraseña</label></th>
-    <th><input type="Password" name="Contraseña" placeholder="contraseña" required></th>
-</tr>
-</table>
-    <li>
-    <input type="submit" value="Ingresar"></li>
-  </ul>
-</form>
-</section>
-</head>
-</html>
+       <asp:Label ID="lblUser" runat="server" Text="Usuario"></asp:Label>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <asp:TextBox ID="txtUser" runat="server"></asp:TextBox>
+        <br />
+       <asp:Label ID="lblPassword" runat="server" Text="Contraseña"></asp:Label>
+       &nbsp;
+       <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+        <br />
+        <br />
+       <asp:Button ID="btnIngresar" runat="server" Text="Ingresar"></asp:Button>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <asp:Button ID="btnRegistrar" runat="server" Text="Regitrate" Height="26px"></asp:Button>
     </div>
     </form>
 </body>
