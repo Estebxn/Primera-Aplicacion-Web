@@ -15,23 +15,25 @@ namespace Prueba
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DatosTableAdapter Adaptador = new DatosTableAdapter();
+        }
 
-            CADUsuarios oLogin = new CADUsuarios();
+        protected void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Registro.aspx");
+        }
 
-            if(txtUser.Text=="" | txtPassword.Text == "")
+        protected void btnIngresar_Click(object sender, EventArgs e)
+        {
+
+            if (CADUsuarios.ValidarUsuario(txtUser.Text, txtPassword.Text))
             {
-                MessageBox.Show("Debes llenar los campos correctos");
+
+                MessageBox.Show("usuario o clave no validos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                txtUser.Text = "";
+                txtPassword.Text = "";
+                txtUser.Focus();
                 return;
-            }
-            else
-            {
-                string Login = oLogin.oLogin(txtUser.Text, Encriptacion.GetMD5(txtPassword.Text));
-                //Activado
-                string Estado = oLogin.EstadoM(txtUser.Text, Encriptacion.GetMD5(txtPassword.Text));
-
-
-
             }
         }
     }

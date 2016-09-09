@@ -18,9 +18,10 @@
        <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
         <br />
         <br />
-       <asp:Button ID="btnIngresar" runat="server" Text="Ingresar"></asp:Button>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       <asp:Button ID="btnRegistrar" runat="server" Text="Regitrate" Height="26px"></asp:Button>
+       <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click"></asp:Button>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="btnRegistrar" runat="server" Text="Registrarse" OnClick="btnRegistrar_Click" />
+&nbsp;&nbsp;&nbsp;
     </div>
     </form>
 </body>
